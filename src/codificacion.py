@@ -21,5 +21,11 @@ def cifra_cesar(texto: str, clave: int) -> str:
         res += c
     return res
 
+def rompe_cesar(texto_codificado: str): #-> None:
+    for clave in range(1, len(ALFABETO)):
+        cifra_cesar(texto_codificado, clave)
+        print(f"clave{}")
+
+
 print(cifra_cesar("Este es un texto de prueba", 19))
 print(cifra_cesar("WFGw wF Hü GwKGB vw CEHwts", -19))

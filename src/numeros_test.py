@@ -1,4 +1,4 @@
-from numeros import invierte_numero, convierte_binario, busca_perfecto, busca_perfecto_rapido
+from numeros import *
 import time
 
 def test_invierte_numero():
@@ -7,6 +7,8 @@ def test_invierte_numero():
     assert invierte_numero(12345) == 54321
     assert invierte_numero(1000) == 1
     assert invierte_numero(987654321) == 123456789
+    assert invierte_numero(-123) == -321
+
 
 def test_convierte_binario():
     print("Probando convierte_binario...")
